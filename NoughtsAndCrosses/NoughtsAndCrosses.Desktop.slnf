@@ -1,0 +1,11 @@
+﻿{
+  "solution": {
+    "path": "NoughtsAndCrosses.sln",
+    "projects": [
+      "NoughtsAndCrosses.Desktop\\NoughtsAndCrosses.Desktop.csproj",
+      "NoughtsAndCrosses.Game\\NoughtsAndCrosses.Game.csproj",
+      "NoughtsAndCrosses.Game.Tests\\NoughtsAndCrosses.Game.Tests.csproj",
+      "NoughtsAndCrosses.Resources\\NoughtsAndCrosses.Resources.csproj"
+    ]
+  }
+}
