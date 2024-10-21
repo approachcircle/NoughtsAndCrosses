@@ -7,7 +7,6 @@ namespace NoughtsAndCrosses.Game
 {
     public partial class MainScreen : Screen
     {
-        private const float col_size = 250;
         private SpriteText gameInfo;
 
         [BackgroundDependencyLoader]
