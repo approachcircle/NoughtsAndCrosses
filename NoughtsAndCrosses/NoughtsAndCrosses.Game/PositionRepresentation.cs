@@ -61,7 +61,7 @@ public partial class PositionRepresentation : Container
     protected override void OnMouseUp(MouseUpEvent e)
     {
         this.ScaleTo(1);
-        if (!playerCharacter.Value.IsDigit())
+        if (!playerCharacter.Value.IsDigit() || MainScreen.PlayerHasWon.Value)
         {
             background
                 .FadeColour(Color4.DarkRed)
@@ -75,7 +75,7 @@ public partial class PositionRepresentation : Container
         playerCharacter.Value = TurnManager.IsPlayerOne ? 'X' : 'O';
         if (TurnManager.CheckVictory())
         {
-            NoughtsAndCrossesGame.ScreenStack.Push(new VictoryScreen());
+            MainScreen.PlayerHasWon.Value = true;
             return;
         }
         TurnManager.IsPlayerOne = !TurnManager.IsPlayerOne;
