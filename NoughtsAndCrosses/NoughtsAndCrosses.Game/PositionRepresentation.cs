@@ -36,7 +36,7 @@ public partial class PositionRepresentation : Container
             Font = FontUsage.Default.With(size: 50)
         };
         playerCharacter.BindValueChanged(
-            newValue => characterObject.Text = newValue.NewValue.ToString(),
+            e => characterObject.Text = e.NewValue.ToString(),
             true);
         InternalChildren =
         [
