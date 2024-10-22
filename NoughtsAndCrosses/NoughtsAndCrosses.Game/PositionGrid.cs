@@ -9,6 +9,7 @@ public partial class PositionGrid : Container
 {
     private const int spacing = 125;
     private List<PositionRepresentation> gridItems = new List<PositionRepresentation>();
+
     [BackgroundDependencyLoader]
     private void load()
     {
